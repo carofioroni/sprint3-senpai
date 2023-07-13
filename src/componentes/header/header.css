@@ -1,0 +1,41 @@
+.headerContainer{
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    height: 80px;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(47, 38, 83);
+    /* background-image: url('src/assets/bg-desktop-light.jpg');   */
+    
+}
+.todoTitle{
+    color: white;
+    font-size: 24px;
+    z-index: 2;
+}
+.buttonChangeTheme{
+background-color: transparent;
+border: none;
+cursor: pointer;
+z-index: 2;
+}
+.headerImage{
+    position: absolute;
+    height: 300px;
+    width: 100vw;
+    
+    
+}
+@media (max-width: 376px) {
+    
+    .headerImage {
+        
+    /* height: 200px; */
+    width: 375vw;
+}
+    .headerImagelight {
+        content: url("/src/assets/bg-mobile-light.jpg");
+  
+}}

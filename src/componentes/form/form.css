@@ -1,0 +1,15 @@
+input{
+    border: none;
+    background-color: white;
+    min-width: 330px;
+    width: 100%;
+    z-index: 4;
+    border-radius: 6px;
+    height: 36px;
+    margin-bottom: 20px;
+    padding: 8px;
+}
+.input-bg-dark-mode{
+    background-color: hsl(235, 24%, 19%);
+    color: white;
+}

@@ -1,0 +1,130 @@
+ul{
+    list-style: none;
+    border: none;
+    border-radius: 6px;
+    background-color: white;
+    /* min-width: 330px; */
+    /* width: 100%; */
+}
+
+li{
+    border-bottom: solid 1px grey;
+    color: darkslategray;
+    font-size: 12px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    overflow-wrap: break-word;
+   
+}
+
+.list-fontColor-dark-mode{
+    color: white;
+}
+.list-bg-dark-mode{
+    background-color:  hsl(235, 24%, 19%);
+    color: white;
+}
+.tick-button{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: hsl(220, 98%, 61%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 3px hsl(220, 98%, 61%);
+    
+
+    /* background: linear-gradient(blue, pink); */
+    /* background-image: linear-gradient(hsl(192, 100%, 67%) to hsl(280, 87%, 65%)); */
+}
+.rounded{
+    min-width: 16px;
+    height: 16px;
+    
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: solid 1px gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.lista{
+    z-index: 4;
+    min-width: 330px;
+    width: 100%;
+}
+
+
+.taskCompleted{
+    text-decoration: line-through;
+    color: lightgray;
+}
+
+.list-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 3em;
+}
+
+.items-left{
+    font-size: 12px;
+    color: darkslategray;
+}
+button{
+    border: none;
+    background-color: transparent;
+    font-size: 12px;
+    color: darkslategray;
+    cursor: pointer;
+}
+button:hover{
+    color: hsl(220, 98%, 61%);
+}
+
+.filters-desktop{
+    display: flex;
+    gap: 8px;
+}
+.items-left-dark-mode{
+    color: white;
+    font-size: 12px;
+}
+
+.clear-completed-dark-mode{
+    color: white;
+}
+
+.filters-dark-mode{
+    color: white;
+    
+}
+.filters-mobile{
+    display: none;
+    gap: 12px;
+    margin-top: 12px;
+    border-radius: 6px;
+    width: 100%;
+    height: 36px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+.filters-mobile-dark-mode{
+    background-color:  hsl(235, 24%, 19%);
+    
+}
+
+@media (max-width: 400px) {
+    .filters-mobile {
+        display: flex;}
+    .filters-desktop {
+        display: none;
+    }
+}
+
